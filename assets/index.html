@@ -13,15 +13,39 @@
     <!-- JavaScript -->
     <script defer src="./script.js"></script>
 </head>
+
 <body>
-    <div class="container-fluid">
-<h2 class = "p-3 fs-1 fw-bold text-danger text-center">Meet our Team</h2>
-<p class = "mt-3 mb-3 fs-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae inventore, aliquam est sed iste nisi pariatur cum, harum ad commodi omnis.</p>
-<div class="row d-flex justify-content-between g-4">
- 
-
-</div>
+    <div class="container-fluid pb-3">
+        <h2 class="p-3 fs-1 fw-bold text-danger text-center">Meet our Team</h2>
+        <p class="mt-3 mb-3 fs-4 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            inventore, aliquam est sed iste nisi pariatur cum, harum ad commodi omnis.</p>
+        <div class="row g-4">
 
 
+        </div>
     </div>
+    <hr>
+    <div class="container-sm mt-4">
+        <h3>New employers input form</h3>
+        <div class="mb-3">
+            <label for="nameOfTeamMember" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameFormControlInput" placeholder="Pippo Allegro">
+        </div>
+        <div class="mb-3">
+            <label for="roleOfTeamMember" class="form-label">Role</label>
+            <input type="text" class="form-control" id="roleFormControlInput" placeholder="CEO">
+        </div>
+        <div class="mb-3">
+            <label for="emailOfTeamMember" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailFormControlInput" placeholder="p.allegro@team.com">
+        </div>
+        <div class="mb-3">
+            <label for="imgOfTeamMember" class="form-label">Pic</label>
+            <input type="text" class="form-control" id="imgUrlFormControlInput"
+                placeholder="https://giornaleradio.fm/il-corsivo/la-scelta-di-silvio-berlusconi-per-il-quirinale-22-01-2022-il-corsivo/">
+        </div>
+        <button type="button" class="btn btn-primary" id="addMemberButton">Add Member</button>
+    </div>
+
+
 </body>

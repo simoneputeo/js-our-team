@@ -37,7 +37,7 @@ const teamMembers = [
   }
 ];
 
-
+function renderCards() {
 const row = document.querySelector(".row");
 row.innerHTML = "";
 
@@ -63,4 +63,28 @@ teamMembers.forEach(member => {
   `;
 
   row.appendChild(col);
+});
+}
+renderCards();
+
+
+document.getElementById('addMemberButton').addEventListener('click', () => {
+  const nameInput = document.getElementById('nameFormControlInput');
+  const roleInput = document.getElementById('roleFormControlInput');
+  const emailInput = document.getElementById('emailFormControlInput');
+  const imgInput = document.getElementById('imgUrlFormControlInput');
+  const newMember = {
+    name: nameInput.value,
+    role: roleInput.value,
+    email: emailInput.value,
+    img: imgInput.value
+  };
+
+  teamMembers.push(newMember);
+  renderCards();
+
+  nameInput.value = '';
+  roleInput.value = '';
+  emailInput.value = '';
+  imgInput.value = '';
 });
